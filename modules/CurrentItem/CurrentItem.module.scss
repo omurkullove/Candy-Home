@@ -1,0 +1,154 @@
+.item {
+  width: 15vw;
+  height: 24vw;
+  border: 2px solid #b22a22;
+  border-radius: 1.3vw;
+  padding: 0.6vw 1vw;
+  -webkit-border-radius: 1.3vw;
+  -moz-border-radius: 1.3vw;
+  -ms-border-radius: 1.3vw;
+  -o-border-radius: 1.3vw;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.4vw;
+  text-align: center;
+  background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  padding: 0.6vw 0;
+  text-align: center;
+  svg {
+    position: absolute;
+    top: 0.6vw;
+    right: 0;
+    cursor: pointer;
+    width: 1.3vw;
+    height: 1.1vw;
+  }
+
+  img {
+    width: 10vw;
+    height: 10.6vw;
+
+    height: auto;
+    object-fit: contain;
+  }
+
+  .subTitle {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    font-weight: 700;
+    font-size: 1.06vw;
+    line-height: 18px;
+    color: #ff0000;
+  }
+}
+
+.itemInfo {
+  font-weight: 700;
+  font-size: 1.06vw;
+
+  span {
+    font-weight: 500;
+    font-size: 1.06vw;
+  }
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.06vw;
+  line-height: 1.2vw;
+  text-align: center;
+  color: #000000;
+  padding: 0.6vw 0;
+}
+
+.btnWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    background: url('../../public/border.png') no-repeat;
+    background-size: contain;
+    font-weight: 700;
+    font-size: 0.7vw;
+    color: #b22a22;
+    background-position: 50%;
+    height: 2.6vw;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) {
+  .item {
+    width: 226px;
+    height: 420px;
+    border-radius: 20px;
+    padding: 10px 15px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .img {
+    width: 100%;
+    padding: 10px 0;
+    svg {
+      top: 10px;
+      right: 0;
+      width: 20px;
+      height: 18px;
+    }
+    img {
+      width: 100%;
+    }
+
+    .subTitle {
+      right: 0;
+      bottom: -5px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .itemInfo {
+    font-size: 16px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .price {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 0;
+  }
+
+  .btnWrap {
+    width: 100%;
+
+    .btn {
+      font-size: 11.0698px;
+      height: 39px;
+      width: 100%;
+    }
+  }
+}

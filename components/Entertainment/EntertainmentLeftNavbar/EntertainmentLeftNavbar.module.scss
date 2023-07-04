@@ -1,0 +1,29 @@
+.navbarBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5vw;
+
+  p {
+    background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 1.6vw;
+    line-height: 1.5vw;
+    display: flex;
+    align-items: center;
+    margin: 1.8vw 0 0 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbarBlock {
+    p {
+      font-size: 22px;
+      line-height: 25px;
+      margin: 20px 0 0 0;
+    }
+  }
+}

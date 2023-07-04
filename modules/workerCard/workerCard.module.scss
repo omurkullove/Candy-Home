@@ -1,0 +1,51 @@
+.parent {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    border: 2px solid #b22a22;
+    border-radius: 0.2vw;
+    -webkit-border-radius: 0.2vw;
+    -moz-border-radius: 0.2vw;
+    -ms-border-radius: 0.2vw;
+    -o-border-radius: 0.2vw;
+  }
+
+  h4 {
+    font-weight: 800;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    margin: 0;
+    width: 50%;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 1.5vw;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .parent {
+    width: 300px;
+
+    img {
+      border-radius: 10px;
+    }
+
+    h4 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+}

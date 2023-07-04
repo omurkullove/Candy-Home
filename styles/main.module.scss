@@ -1,0 +1,208 @@
+.content {
+  display: flex;
+}
+
+.navBar {
+  width: 23%;
+  padding-top: 10px;
+}
+
+.navBarContent:after {
+  content: '';
+  background: url('../public/leftNavBarBorder.png') repeat-y;
+  width: 1vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navBarContent {
+  padding-top: 40px;
+  position: relative;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+
+.navBarImg {
+  text-align: center;
+  margin-bottom: 1.2vw;
+}
+
+.navBarItems {
+  .navBarItem {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.3vw;
+      text-transform: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.navBarBtn {
+  cursor: pointer;
+  background: url('../public/linksBg.png') no-repeat;
+  width: 100%;
+  height: 66px;
+  padding-left: 10px;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.mainContent {
+  margin-top: 20px;
+  flex: 2;
+  padding: 0 20px;
+}
+.mainImg {
+  width: 69vw;
+  background: url('../public/imgBorder.png') no-repeat;
+  background-size: contain;
+
+  padding: 1vw;
+  img {
+    width: 100% !important;
+  }
+}
+
+.mainItems {
+  margin-top: 2.6vw;
+}
+
+.mainItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 12vw;
+
+  .mainItemImg {
+    width: 32vw;
+    height: 14vw;
+    background: url('../public/imgBorder.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    overflow: hidden;
+    min-height: 12vw;
+  }
+
+  .mainItemInfo {
+    width: 32vw;
+    height: 14vw;
+
+    .mainItemTitle {
+      font-weight: 700;
+      font-size: 1.7vw;
+      margin-bottom: 0.7vw;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    .mainItemText {
+      font-weight: 400;
+      font-size: 1.1vw;
+      line-height: 1.2vw;
+    }
+
+    .mainItemLink {
+      font-weight: 400;
+      font-size: 1vw;
+      text-align: right;
+      text-decoration-line: underline;
+      color: black;
+      margin-top: 0.7vw;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .navBar {
+    width: 23%;
+    padding-top: 10px;
+  }
+
+  .navBarContent:after {
+    width: 15px;
+    height: 100%;
+  }
+
+  .navBarContent {
+    padding-top: 40px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .navBarImg {
+    margin-bottom: 20px;
+  }
+
+  .navBarItems {
+    .navBarItem {
+      a {
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .navBarBtn {
+    width: 100%;
+    height: 66px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .mainContent {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .mainImg {
+    width: 1020px;
+    padding: 15px;
+  }
+
+  .mainItems {
+    margin-top: 40px;
+  }
+
+  .mainItem {
+    min-height: 185px;
+    .mainItemImg {
+      width: 49%;
+      height: 200px;
+      padding: 15px;
+      min-height: 185px;
+    }
+
+    .mainItemInfo {
+      width: 49%;
+      height: 210px;
+
+      .mainItemTitle {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .mainItemText {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      .mainItemLink {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

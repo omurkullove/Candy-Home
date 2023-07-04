@@ -1,0 +1,22 @@
+.main {
+  p {
+    font-weight: 700;
+
+    font-size: 1.6vw;
+    line-height: 1.7vw;
+    background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    p {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+}

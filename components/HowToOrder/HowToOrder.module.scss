@@ -1,0 +1,213 @@
+.title {
+  background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.6vw;
+}
+
+.subTitle {
+  background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.6vw;
+  line-height: 1.7vw;
+  margin: 0;
+  text-align: center;
+}
+
+.tableDiv {
+  margin-top: 1.33vw;
+
+  .table {
+    border-collapse: collapse;
+    width: 66.67vw;
+
+    th {
+      font-weight: 700;
+      font-size: 1.6vw;
+      background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      border: 0.067vw solid #b22a22;
+      text-align: center;
+      padding: 1.3vw;
+    }
+
+    td {
+      border: 0.067vw solid #b22a22;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.2vw;
+      line-height: 1.7vw;
+      color: #000000;
+
+      &:nth-child(6) {
+        input {
+          background: #ffffff;
+          border: 0.033vw solid #b22a22;
+          border-radius: 5px;
+          width: 2.67vw;
+          height: 2.08vw;
+          color: #b22a22;
+          font-weight: 700;
+          font-size: 1.1412vw;
+          text-align: center;
+          margin-inline: 0.67vw;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          font-weight: 700;
+          font-size: 1.2vw;
+          line-height: 1.7vw;
+          background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-decoration: underline;
+          background-clip: text;
+          cursor: pointer;
+          border-bottom: 0.2vw solid #b22a22;
+          width: min-content;
+          margin-left: 1.33vw;
+        }
+      }
+    }
+  }
+}
+
+.totalBlock {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 66.67vw;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-weight: 700;
+      font-size: 1.6vw;
+      line-height: 1.7vw;
+      background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    span {
+      margin-left: 0.67vw;
+      font-weight: 700;
+      font-size: 1.6vw;
+      line-height: 3.5vw;
+      color: #000000;
+    }
+  }
+  .block2 {
+    font-weight: 700;
+    background: url('../../public/linksBg.png') 100% 100% no-repeat;
+    background-size: contain;
+    font-size: 0.8vw;
+    padding: 1.33vw;
+    height: 3.33vw;
+    display: flex;
+    align-items: center;
+    color: #b22a22;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .modalBlock {
+    position: fixed;
+    display: flex;
+    background: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.133vw);
+    z-index: 5000;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .tableDiv {
+    margin-top: 20px;
+    .table {
+      width: 100%;
+
+      th {
+        font-size: 20px;
+        padding: 20px;
+      }
+      td {
+        font-size: 18px;
+        line-height: 21px;
+
+        &:nth-child(6) {
+          input {
+            border-radius: 5px;
+            width: 40px;
+            height: 31px;
+            font-size: 17.1612px;
+            margin-inline: 10px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 21px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .totalBlock {
+    width: 100%;
+    div {
+      p {
+        font-size: 22px;
+        line-height: 25px;
+      }
+      span {
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+    .block2 {
+      font-size: 12px;
+      padding: 20px;
+      height: 50px;
+    }
+
+    .modalBlock {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

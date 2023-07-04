@@ -1,0 +1,66 @@
+.customSelect {
+  position: relative;
+
+  .input {
+    width: 12.3vw;
+    height: 1.7vw;
+    background: #ffffff;
+    border: 0.5px solid #ac0000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.6vw;
+    cursor: pointer;
+    svg {
+      margin-left: auto;
+    }
+  }
+
+  .dropDown {
+    position: absolute;
+    top: 2vw;
+    left: 0px;
+    background-color: #fff;
+    border: 1px solid #ac0000;
+    border-radius: 5px;
+    padding: 0.6vw 2vw;
+    z-index: 2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    p {
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 0.9vw;
+      line-height: 1vw;
+      padding: 0;
+      margin: 5px 0;
+      color: #000000;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .customSelect {
+    .input {
+      width: 280px;
+      height: 28px;
+      padding: 0 10px;
+      svg {
+        margin-left: auto;
+        width: 9px;
+        height: 12px;
+      }
+    }
+
+    .dropDown {
+      top: 30px;
+      padding: 10px 15px;
+      p {
+        font-size: 15px;
+        line-height: 15px;
+      }
+    }
+  }
+}

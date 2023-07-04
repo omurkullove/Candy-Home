@@ -1,0 +1,123 @@
+$px22Adaptive: 1.4vw;
+$px25pxAdaptive: 1.7vw;
+
+.parent {
+  .block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .title {
+      background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      font-size: 1.4vw;
+      line-height: 1.7vw;
+      margin: 0;
+
+      @media (min-width: 1440px) {
+        font-size: 22px;
+        line-height: 25px;
+      }
+    }
+
+    .subTitle {
+      margin: 0;
+      background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      font-size: 1.4vw;
+      line-height: 1.7vw;
+
+      @media (min-width: 1440px) {
+        font-size: 22px;
+        line-height: 25px;
+      }
+    }
+    .list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+
+      background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      font-size: $px22Adaptive;
+      line-height: $px25pxAdaptive;
+
+      @media (min-width: 1440px) {
+        font-size: 22px;
+        line-height: 25px;
+      }
+    }
+  }
+  .block2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    div {
+      margin: 1.7vw;
+      display: flex;
+      align-items: center;
+
+      @media (min-width: 1440px) {
+        margin: 20px;
+      }
+
+      p {
+        background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+        font-size: $px22Adaptive;
+        line-height: $px25pxAdaptive;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+        cursor: pointer;
+        @media (min-width: 1440px) {
+          font-size: 22px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .block3 {
+    width: fit-content;
+    max-height: fit-content;
+    border: 3px solid #b22a22;
+    border-radius: 1vw;
+    height: fit-content;
+    position: relative;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+
+    button {
+      position: absolute;
+      left: 5px;
+      z-index: 999;
+      bottom: 10px;
+      background: url('../../public/location.svg') no-repeat;
+      background-size: 100% 100%;
+      border: none;
+      cursor: pointer;
+      padding: 1.3vw;
+    }
+  }
+
+  .block4 {
+    margin-top: 50px;
+    width: 67vw;
+    max-width: 1020px;
+  }
+}

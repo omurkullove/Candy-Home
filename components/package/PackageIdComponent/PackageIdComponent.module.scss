@@ -1,0 +1,59 @@
+.filter {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+
+  span {
+    background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: 0.6vw;
+    font-weight: 700;
+    font-size: 1.3vw;
+  }
+}
+.items {
+  display: flex;
+  gap: 1.3vw;
+  flex-wrap: wrap;
+}
+
+.mainImg {
+  width: 18.9vw;
+  height: 22.4vw;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.secondImg {
+  width: 80px;
+  height: 76px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .filter {
+    span {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+  }
+  .items {
+    gap: 20px;
+  }
+
+  .mainImg {
+    width: 284px;
+    height: 337px;
+  }
+}

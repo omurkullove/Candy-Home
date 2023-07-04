@@ -1,0 +1,56 @@
+.photosBlock {
+  margin-top: 0.5vw;
+  width: 69vw;
+
+  .hashtag {
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 160%;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 1.6vw;
+    line-height: 1.8vw;
+  }
+  a {
+    font-weight: 700;
+    font-size: 1.7vw;
+    line-height: 160%;
+    border-bottom: 0.2vw solid black;
+  }
+
+  .photoBlock {
+    background: url('../../public/photosBorder.svg') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 12vw;
+    height: 8.3vw;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) {
+  .photosBlock {
+    margin-top: 10px;
+    width: 1025px;
+
+    .hashtag {
+      font-size: 12px;
+      line-height: 160%;
+    }
+    .title {
+      font-size: 22px;
+      line-height: 25px;
+    }
+    a {
+      font-size: 20px;
+      line-height: 160%;
+      border-bottom: 3px solid black;
+    }
+
+    .photoBlock {
+      width: 180px;
+      height: 125px;
+    }
+  }
+}

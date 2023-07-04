@@ -1,0 +1,71 @@
+.navBarDropDowns {
+  .dropDownWrap {
+    position: relative;
+    padding: 1vw 0;
+
+    .dFlex {
+      display: flex;
+      align-items: baseline;
+
+      svg {
+        margin-left: auto;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        width: 0.9vw;
+        height: 0.9vw;
+      }
+    }
+
+    .navBarDropDownTitle {
+      font-weight: 700;
+      font-size: 1.4vw;
+      line-height: 2.1vw;
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+}
+
+.dropDownContent {
+  padding-left: 1.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  transition: max-height 1s ease-out;
+  max-height: 0;
+  overflow: hidden;
+
+  .dropDownItem {
+    input {
+      background: #ffffff;
+      border: 0.125vw solid #ac0000;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .navBarDropDowns {
+    .dropDownWrap {
+      padding: 10px 0;
+      .dFlex {
+        svg {
+          width: 9px;
+          height: 12px;
+        }
+      }
+
+      .navBarDropDownTitle {
+        font-size: 22px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .dropDownContent {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

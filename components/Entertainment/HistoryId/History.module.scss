@@ -1,0 +1,64 @@
+.parent {
+  .block1 {
+    .title {
+      font-weight: 700;
+      font-size: 1.6vw;
+      line-height: 1.7vw;
+      text-transform: uppercase;
+    }
+
+    .hashtag {
+      font-weight: 400;
+      font-size: 1.2vw;
+      line-height: 160%;
+      margin: 0.6vw 0 0 0;
+    }
+  }
+
+  .block2 {
+    height: 34vw;
+    background: url('../../../public/entertainmentBorder.svg') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1vw;
+  }
+
+  .block3 {
+    .text {
+      font-weight: 400;
+      font-size: 1.1vw;
+      line-height: 160%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .parent {
+    .block1 {
+      .title {
+        font-size: 22px;
+        line-height: 25px;
+      }
+
+      .hashtag {
+        font-size: 12px;
+        margin: 10px 0 0 0;
+      }
+    }
+
+    .block2 {
+      height: 462px;
+      width: 1025px;
+      padding: 0;
+    }
+
+    .block3 {
+      .text {
+        font-size: 16px;
+      }
+    }
+  }
+}

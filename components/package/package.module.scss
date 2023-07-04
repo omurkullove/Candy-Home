@@ -1,0 +1,37 @@
+.content {
+  display: flex;
+}
+
+.mainContent {
+  padding-top: 20px;
+  width: 70%;
+  margin-left: 30px;
+  flex: 2;
+}
+
+.title {
+  background: linear-gradient(180deg, #000000 0%, #e10000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.4vw;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 1.3vw;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .items {
+    gap: 20px;
+  }
+}
