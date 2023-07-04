@@ -1,1 +1,10 @@
-{}
+{
+  "../components/Contacts/Contacts.jsx -> ./Map": {
+    "id": 5596,
+    "files": [
+      "static/chunks/0b7b90cd.d3c65c02bb3783bb.js",
+      "static/css/af11442418fce4ab.css",
+      "static/chunks/596.35cf26875d5f8564.js"
+    ]
+  }
+}

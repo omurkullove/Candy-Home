@@ -1,7 +1,23 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/entertainment": "pages/entertainment.js",
-  "/404": "pages/404.js"
+  "/404": "pages/404.html",
+  "/MainPage": "pages/MainPage.html",
+  "/api/hello": "pages/api/hello.js",
+  "/candies/[candyId]": "pages/candies/[candyId].html",
+  "/candies": "pages/candies.html",
+  "/constructor": "pages/constructor.html",
+  "/contacts": "pages/contacts.html",
+  "/entertainment/history/[historyId]": "pages/entertainment/history/[historyId].html",
+  "/entertainment": "pages/entertainment.html",
+  "/entertainment/photos/[photosId]": "pages/entertainment/photos/[photosId].html",
+  "/gifts/[giftsId]": "pages/gifts/[giftsId].html",
+  "/gifts": "pages/gifts.html",
+  "/gifts/item/[giftsItemId]": "pages/gifts/item/[giftsItemId].html",
+  "/howToOrder": "pages/howToOrder.html",
+  "/": "pages/index.html",
+  "/package/[packageId]": "pages/package/[packageId].html",
+  "/package": "pages/package.html",
+  "/package/item/[packageItemId]": "pages/package/item/[packageItemId].html",
+  "/_document": "pages/_document.js"
 }
